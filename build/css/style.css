@@ -1,0 +1,48 @@
+body {
+  background-color: #fff;
+  max-width: 1366px;
+  font-family: "Circe-Regular" "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 30px;
+  color: #2d2829;
+  margin: 0 auto;
+}
+@font-face {
+  font-family: "Circe-Regular";
+  src: url(../fonts/Circe-Regular.woff2) format("woff2"), url(../fonts/Circe-Regular.woff) format("woff"), url(../fonts/Circe-Regular.ttf) format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Circe-Bold";
+  src: url(../fonts/Circe-Bold.woff2) format("woff2"), url(../fonts/Circe-Bold.woff) format("woff"), url(../fonts/Circe-Bold.ttf) format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "PlayfairDisplay-Bold";
+  src: url(../fonts/PlayfairDisplay-Bold.woff2) format("woff2"), url(../fonts/PlayfairDisplay-Bold.woff) format("woff"), url(../fonts/PlayfairDisplay-Bold.ttf) format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "PlayfairDisplay-BoldItalic";
+  src: url(../fonts/PlayfairDisplay-BoldItalic.woff2) format("woff2"), url(../fonts/PlayfairDisplay-BoldItalic.woff) format("woff"), url(../fonts/PlayfairDisplay-BoldItalic.ttf) format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+img {
+  width: 100%;
+  height: auto;
+}
+a {
+  font-family: "Circe-Regular" "Arial", sans-serif;
+  color: #f87b91;
+  text-decoration: none;
+}
+a:hover {
+  opacity: 0.7;
+}
+a:active {
+  opacity: 0.3;
+}
