@@ -31,6 +31,12 @@ body {
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: "IntroScriptR-H2Base";
+  src: url(../fonts/IntroScriptR-H2Base.woff2) format("woff2"), url(../fonts/IntroScriptR-H2Base.woff) format("woff"), url(../fonts/IntroScriptR-H2Base.ttf) format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
 img {
   width: 100%;
   height: auto;
@@ -38,7 +44,6 @@ img {
 a {
   font-family: "Circe-Regular" "Arial", sans-serif;
   color: #f87b91;
-  text-decoration: none;
 }
 a:hover {
   opacity: 0.7;
