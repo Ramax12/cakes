@@ -1,64 +1,74 @@
 body {
-	background-color: #fff;
+	background-color: #fbebea;
 	max-width: 1366px;
-	font-family: @fontFamilySimpleRegular;
+	font-family: @fontFamilyBrand;
 	font-size: 14px;
-	line-height: 30px;
+	line-height: 16px;
 	color: @colorBrand;
 	margin: 0 auto;
+
+	&::before {
+	background-image: url("../img/cakes-1-mobile@1x.png");
+	background-repeat: no-repeat;
+	background-position: 50% 0;
+	background-size: 401px;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: -165px;
+	z-index: -1;
+	content: "";
+	}
 }
 @font-face {
-	font-family: "Circe-Regular";
+	font-family: "Circe Regular";
 	src: url(../fonts/Circe-Regular.woff2)format("woff2"),
-		url(../fonts/Circe-Regular.woff)format("woff"),
-		url(../fonts/Circe-Regular.ttf)format("truetype");
+		url(../fonts/Circe-Regular.woff)format("woff");
 	font-weight: normal;
-  	font-style: normal;
+	font-style: normal;
 }
 @font-face {
-	font-family: "Circe-Bold";
+	font-family: "Circe Bold";
 	src: url(../fonts/Circe-Bold.woff2)format("woff2"),
-		url(../fonts/Circe-Bold.woff)format("woff"),
-		url(../fonts/Circe-Bold.ttf)format("truetype");
-	font-weight: normal;
+		url(../fonts/Circe-Bold.woff)format("woff");
+	font-weight: bold;
 	font-style: normal;
 }
 @font-face {
-	font-family: "PlayfairDisplay-Bold";
+	font-family: "PlayfairDisplay Bold";
 	src: url(../fonts/PlayfairDisplay-Bold.woff2)format("woff2"),
-		url(../fonts/PlayfairDisplay-Bold.woff)format("woff"),
-		url(../fonts/PlayfairDisplay-Bold.ttf)format("truetype");
-	font-weight: normal;
+		url(../fonts/PlayfairDisplay-Bold.woff)format("woff");
+	font-weight: bold;
 	font-style: normal;
 }
 @font-face {
-	font-family: "PlayfairDisplay-BoldItalic";
+	font-family: "PlayfairDisplay BoldItalic";
 	src: url(../fonts/PlayfairDisplay-BoldItalic.woff2)format("woff2"),
-		url(../fonts/PlayfairDisplay-BoldItalic.woff)format("woff"),
-		url(../fonts/PlayfairDisplay-BoldItalic.ttf)format("truetype");
-	font-weight: normal;
-	font-style: normal;
+		url(../fonts/PlayfairDisplay-BoldItalic.woff)format("woff");
+	font-weight: bold;
+	font-style: italic;
 }
 @font-face {
-	font-family: "IntroScriptR-H2Base";
+	font-family: "IntroScriptR H2Base";
 	src: url(../fonts/IntroScriptR-H2Base.woff2)format("woff2"),
-		url(../fonts/IntroScriptR-H2Base.woff)format("woff"),
-		url(../fonts/IntroScriptR-H2Base.ttf)format("truetype");
+		url(../fonts/IntroScriptR-H2Base.woff)format("woff");
 	font-weight: normal;
-  	font-style: normal;
+	font-style: normal;
 }
 img {
 	width: 100%;
 	height: auto;
 }
 a {
-	font-family: @fontFamilySimpleRegular;
+	font-family: @fontFamilyBrand;
 	color: @colorLinks;
 }
 a:hover {
-	opacity: .7
+	opacity: .7;
 }
-
-a:active {
-	opacity: .3;
+@media (max-width: @mobileMaxWidth) and (min-resolution:144dpi),
+(max-width: @mobileMaxWidth) and (min-resolution:1.5dppx) {
+body::before {
+	background-image: url("../img/cakes-1-mobile@2x.png");
+}
 }

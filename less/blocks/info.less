@@ -1,0 +1,58 @@
+.info {
+	background-color: #e13238;
+	background-image: url("../img/gift-mobile@1x.jpg");
+	background-repeat: no-repeat;
+	background-position: 50% 68%;
+	background-size: 767px;
+	height: 455px;
+	padding: 15px @lateralEdgeMobile;
+	margin-bottom: 32px;
+
+	& h2 {
+		color: #fff;
+		text-align: center;
+	}
+}
+.info__list {
+	font-family: @fontFamilyTitle;
+	font-size: 30px;
+	color: #fff;
+	padding-left: 20px;
+	margin: 0;
+	margin-top: 20px;
+	list-style-type: none;
+	counter-reset: item;
+}
+.info__item {
+	padding: 0;
+	margin-bottom: 10px;
+
+	&::before {
+		display: inline-block;
+		vertical-align: middle;
+		content: counter(item);
+		counter-increment: item;
+		margin-right: 8px;
+	}
+}
+.info__title {
+	display: inline-block;
+	vertical-align: middle;
+	font-family: @fontFamilyBrandBold;
+	font-size: 15px;
+	color: #fff;
+	margin: 10px 0 5px;
+}
+.info__content {
+	font-family: @fontFamilyBrand;
+	font-size: 14px;
+	color: #fff;
+	margin: 0;
+	margin-left: 28px;
+}
+@media (max-width: @mobileMaxWidth) and (min-resolution:144dpi),
+(max-width: @mobileMaxWidth) and (min-resolution:1.5dppx) {
+.info {
+	background-image: url("../img/gift-mobile@2x.jpg");
+}
+}
