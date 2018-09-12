@@ -1,18 +1,21 @@
 .biography {
 	padding: 0 @lateralEdgeMobile;
 }
+.biography__title {
+	text-align: center;
+	margin-bottom: 22px;
+}
 .biography__img-wrapper {
 	background-color: #fff;
-	// width: 158px;
 	width: 56%;
 	max-width: 208px;
 	display: inline-block;
 	line-height: 0;
-	border-radius: 150px;
+	border-radius: 250px;
 	margin-right: 30px;
 }
 .biography__img {
-	border-radius: 150px;
+	border-radius: 250px;
 }
 .biography {
 	margin-bottom: 48px;
@@ -20,7 +23,7 @@
 .biography__subtitle {
 	margin: 8px 0 7px;
 }
-.biography__title {
+.biography__caption {
 	font-family: @fontFamilyBrandBold;
 	font-size: 14px;
 	color: @colorBrand;
@@ -28,4 +31,72 @@
 }
 .biography__content {
 	margin: 8px 0 12px;
+}
+@media (min-width: @tabletMinWidth) {
+.biography {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+}
+.biography__title {
+	text-align: left;
+	margin: 0;
+	order: 1;
+}
+.biography__subtitle {
+	margin-top: 5px;
+}
+.biography__img-wrapper {
+	margin-right: 0;
+	order: 4;
+}
+.biography__social-networking {
+	flex-direction: row;
+	order: 3;
+}
+.biography__text-wrapper {
+	order: 2;
+}
+.biography__content {
+	margin-bottom: 8px;
+}
+}
+@media (min-width: @tabletMinWidth) and (max-width: @tabletMaxWidth) {
+.biography {
+	height: 350px;
+	margin: 0 25px 10px;
+}
+.biography__img-wrapper {
+	width: 309px;
+	max-width: 309px;
+}
+.biography__text-wrapper {
+	width: 330px;
+}
+.biography__caption {
+	font-size: 15px;
+}
+}
+@media (min-width: @desktopWidth) {
+.biography {
+	height: 550px;
+	padding: 0 @lateralEdgeDesktop;
+	margin-bottom: 100px;
+}
+.biography__title {
+	margin-bottom: 10px;
+}
+.biography__img-wrapper {
+	width: 509px;
+	max-width: 509px;
+}
+.biography__item {
+	margin-bottom: 25px;
+}
+.biography__text-wrapper {
+	width: 555px;
+}
+.biography__caption {
+	font-size: 20px;
+}
 }

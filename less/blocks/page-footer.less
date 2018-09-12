@@ -22,10 +22,56 @@
 .page-footer__icon-vkontakte {
 	width: 31px;
 }
-.contacts__copyright {
+.page-footer__copyright {
 	font-family: @fontFamilyTitle;
 	font-size: 12px;
 	line-height: 28px;
 	color: #b6b6b6;
 	border-top: 1px solid #b6b6b6;
+}
+@media (min-width: @tabletMinWidth) {
+.page-footer {
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding-top: 20px;
+}
+.page-footer__bottom-block {
+	width: 100%;
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: center;
+	align-items: center;
+	padding: 12px 0;
+	border-top: 1px solid #b6b6b6;
+}
+.page-footer__icon {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+.page-footer__copyright {
+	border: none;
+	margin-right: 25px;
+}
+}
+@media (min-width: @tabletMinWidth) and (max-width: @tabletMaxWidth) {
+.page-footer__logo {
+	font-size: 18px;
+}
+.page-footer__bottom-block {
+	margin-top: 18px;
+}
+}
+@media (min-width: @desktopWidth) {
+.page-footer {
+	background-color: #e8e8e8;
+	padding: 27px @lateralEdgeDesktop 0;
+}
+.page-footer__logo {
+	font-size: 28px;
+	color: #000;
+}
+.page-footer__bottom-block {
+	margin-top: 33px;
+}
 }

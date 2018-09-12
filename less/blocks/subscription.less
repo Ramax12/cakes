@@ -9,12 +9,47 @@
 	text-align: center;
 }
 .subscription__content {
+	max-width: 350px;
 	font-family: @fontFamilyItalic;
 	font-size: 13px;
 	color: @colorBrand;
-	margin: 5px 15px 18px;
+	text-align: center;
+	margin: 5px auto 18px;
 }
 .subscription__sign-wrapper {
 	width: 64px;
 	margin: 0 auto;
+}
+@media (min-width: @tabletMinWidth) and (max-width: @tabletMaxWidth) {
+.subscription {
+	margin-bottom: 30px;
+}
+.subscription__quotes {
+	font-size: 77px;
+}
+.subscription__content {
+	font-size: 14px;
+	line-height: 20px;
+	margin-bottom: 30px;
+}
+.subscription__sign-wrapper {
+	width: 85px;
+}
+}
+@media (min-width: @desktopWidth) {
+.subscription {
+	margin-bottom: 85px;
+}
+.subscription__quotes {
+	font-size: 140px;
+}
+.subscription__content {
+	max-width: 620px;
+	font-size: 25px;
+	line-height: 38px;
+	margin: 18px auto 45px;
+}
+.subscription__sign-wrapper {
+	width: 150px;
+}
 }

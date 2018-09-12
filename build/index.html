@@ -162,13 +162,13 @@
 			<h1 class="main__title">Торты на заказ</h1>
 			<p class="main__subtitle subtitle">Ручная работа</p>
 			<ul class="main__list">
-				<li class="main__item">
+				<li class="main__item main__item--ingredient">
 					<svg width="33" height="33">
 						<use xlink:href='#ingredient'/>
 					</svg>
 					<p>Натуральные ингредиенты</p>
 				</li>
-				<li class="main__item">
+				<li class="main__item main__item--delivery">
 					<svg width="33" height="33">
 						<use xlink:href='#delivery'/>
 					</svg>
@@ -180,7 +180,7 @@
 		<section class="variety" id="variety">
 			<h2 class="title">Наши торты</h2>
 			<ul class="variety__list">
-				<li class="variety__item variety__item-1">
+				<li class="variety__item variety__item--classic">
 					<a href="#" class="variety__link">
 						<h3 class="variety__title">Классические</h3>
 						<p class="variety__subtitle">24 вида</p>
@@ -192,7 +192,7 @@
 						</div>
 					</a>
 				</li>
-				<li class="variety__item variety__item-2">
+				<li class="variety__item variety__item--mousseous">
 					<a href="#" class="variety__link">
 						<h3 class="variety__title">Муссовые</h3>
 						<p class="variety__subtitle">12 видов</p>
@@ -203,7 +203,7 @@
 						</div>
 					</a>
 				</li>
-				<li class="variety__item variety__item-3">
+				<li class="variety__item variety__item--wedding">
 					<a href="#" class="variety__link">
 						<h3 class="variety__title">Свадебные</h3>
 						<p class="variety__subtitle">20 видов</p>
@@ -216,7 +216,7 @@
 				</li>
 			</ul>
 			<ul class="variety__list">
-				<li class="variety__item variety__item-4">
+				<li class="variety__item variety__item--man">
 					<a href="#" class="variety__link">
 						<h3 class="variety__title">Мужчинам</h3>
 						<p class="variety__subtitle">12 видов</p>
@@ -227,7 +227,7 @@
 						</div>
 					</a>
 				</li>
-				<li class="variety__item variety__item-5">
+				<li class="variety__item variety__item--woman">
 					<a href="#" class="variety__link">
 						<h3 class="variety__title">Женщинам</h3>
 						<p class="variety__subtitle">16 видов</p>
@@ -238,7 +238,7 @@
 						</div>
 					</a>
 				</li>
-				<li class="variety__item variety__item-6">
+				<li class="variety__item variety__item--children">
 					<a href="#" class="variety__link">
 						<h3 class="variety__title">Детские</h3>
 						<p class="variety__subtitle">18 видов</p>
@@ -257,39 +257,45 @@
 			<p class="collect__subtitle subtitle">Соберите торт в 3 шага</p>
 			<div class="collect__list">
 				<div class="collect__item">
-					<span class="collect__marking">01</span>
-					<span class="collect__name">Выберите начинку</span>
-					<div class="view slider">
+					<div class="collect__head">
+						<span class="collect__marking">01</span>
+						<span class="collect__name">Выберите начинку</span>
+					</div>
+					<div class="view slider view--filling">
 						<div class="view__item slider__item">
-							<div class="view__img-wrapper">
+							<div class="view__img-wrapper view__img-wrapper--filling">
 								<picture>
 									<source media="(min-width: 1366px)" srcset="img/filling-1-desktop@1x.png 1x, img/filling-1-desktop@2x.png 2x">
 									<source media="(min-width: 768px)" srcset="img/filling-1-tablet@1x.png 1x, img/filling-1-tablet@2x.png 2x">
-									<img src="img/filling-1-mobile@1x.png" srcset="img/filling-1-mobile@2x.png 2x" alt="Шоколадный ганаш" title="Шоколадный ганаш" class="view__img view__img-filling">
+									<img src="img/filling-1-mobile@1x.png" srcset="img/filling-1-mobile@2x.png 2x" alt="Шоколадный ганаш" title="Шоколадный ганаш" class="view__img view__img--filling">
 								</picture>
 							</div>
-							<span class="slider__number view__number-filling">1/12</span>
-							<h3 class="view__title">Шоколадный ганаш</h3>
-							<p class="view__content content">Ароматный шоколадный бисквит, густой шоколадный крем – самый шоколадный из всех возможных десертов!</p>
-							<span class="view__price">1000 руб/кг</span>
-							<a href="" class="view__btn btn">Выбрать</a>
+							<div class="view__text-wrapper">
+								<h3 class="view__title">Шоколадный ганаш</h3>
+								<p class="view__content content">Ароматный шоколадный бисквит, густой шоколадный крем – самый шоколадный из всех возможных десертов!</p>
+								<span class="view__price">1000 руб/кг</span>
+								<a href="" class="view__btn btn">Выбрать</a>
+							</div>
 						</div>
-						<div class="slider__controls slider__controls--position">
+						<div class="slider__controls slider__controls--filling">
 							<span class="slider__toggle slider__toggle--active"></span>
 							<span class="slider__toggle"></span>
 							<span class="slider__toggle"></span>
 							<span class="slider__toggle"></span>
 							<span class="slider__toggle"></span>
 						</div>
+						<span class="view__number view__number--filling">1/12</span>
 					</div>
 				</div>
 				<div class="collect__item">
-					<span class="collect__marking">02</span>
-					<span class="collect__name">Размер</span>
-					<div class="view slider">
-						<div class="view__item slider__item">
-							<div class="view__img-wrapper">
-								<img src="img/size-1.jpg" alt="1 кг" title="1 кг" class="view__img view__img-size-1">
+					<div class="collect__head">
+						<span class="collect__marking">02</span>
+						<span class="collect__name">Размер</span>
+					</div>
+					<div class="view slider view--size">
+						<div class="view__item slider__item view__item--size-1">
+							<div class="view__img-wrapper view__img-wrapper--size">
+								<img src="img/size-1.jpg" alt="1 кг" title="1 кг" class="view__img view__img--size view__img--size-1">
 							</div>
 							<div class="slider__controls">
 								<span class="slider__toggle slider__toggle--active"></span>
@@ -297,12 +303,12 @@
 								<span class="slider__toggle"></span>
 								<span class="slider__toggle"></span>
 							</div>
-							<p class="view__description content">17-18 см<br>(1 кг – 6 персон)</p>
-							<a href="" class="view__btn btn">Выбрать</a>
+							<p class="view__description">17-18 см<br>(1 кг – 6 персон)</p>
+							<a href="" class="view__btn btn view__btn--size view__btn--size-1">Выбрать</a>
 						</div>
-						<div class="view__item slider__item">
-							<div class="view__img-wrapper">
-								<img src="img/size-2.jpg" alt="2 кг" title="2 кг" class="view__img view__img-size-2">
+						<div class="view__item slider__item view__item--size-2">
+							<div class="view__img-wrapper view__img-wrapper--size">
+								<img src="img/size-2.jpg" alt="2 кг" title="2 кг" class="view__img view__img--size view__img--size-2">
 							</div>
 							<div class="slider__controls">
 								<span class="slider__toggle"></span>
@@ -310,12 +316,12 @@
 								<span class="slider__toggle"></span>
 								<span class="slider__toggle"></span>
 							</div>
-							<p class="view__description content">23-24 см<br>(10–12 персон)</p>
-							<a href="" class="view__btn btn">Выбрать</a>
+							<p class="view__description">23-24 см<br>(10–12 персон)</p>
+							<a href="" class="view__btn btn view__btn--size view__btn--size-2">Выбрать</a>
 						</div>
-						<div class="view__item slider__item">
-							<div class="view__img-wrapper">
-								<img src="img/size-3.jpg" alt="5 кг" title="5 кг" class="view__img view__img-size-3">
+						<div class="view__item slider__item view__item--size-3">
+							<div class="view__img-wrapper view__img-wrapper--size">
+								<img src="img/size-3.jpg" alt="5 кг" title="5 кг" class="view__img view__img--size view__img--size-3">
 							</div>
 							<div class="slider__controls">
 								<span class="slider__toggle"></span>
@@ -323,12 +329,12 @@
 								<span class="slider__toggle slider__toggle--active"></span>
 								<span class="slider__toggle"></span>
 							</div>
-							<p class="view__description content">Два яруса 25 и 20 см<br>(15–20 персон)</p>
-							<a href="" class="view__btn btn">Выбрать</a>
+							<p class="view__description">Два яруса 25 и 20 см<br>(15–20 персон)</p>
+							<a href="" class="view__btn btn view__btn--size view__btn--size-3">Выбрать</a>
 						</div>
-						<div class="view__item slider__item">
-							<div class="view__img-wrapper">
-								<img src="img/size-4.jpg" alt="8 кг" title="8 кг" class="view__img view__img-size-4">
+						<div class="view__item slider__item view__item--size-4">
+							<div class="view__img-wrapper view__img-wrapper--size">
+								<img src="img/size-4.jpg" alt="8 кг" title="8 кг" class="view__img view__img--size view__img--size-4">
 							</div>
 							<div class="slider__controls">
 								<span class="slider__toggle"></span>
@@ -336,48 +342,49 @@
 								<span class="slider__toggle"></span>
 								<span class="slider__toggle slider__toggle--active"></span>
 							</div>
-							<p class="view__description content">Три яруса 30,25 и 18 см<br>(25–30 персон)</p>
-							<a href="" class="view__btn btn">Выбрать</a>
+							<p class="view__description">Три яруса 30,25 и 18 см<br>(25–30 персон)</p>
+							<a href="" class="view__btn btn view__btn--size view__btn--size-4">Выбрать</a>
 						</div>
 					</div>
 				</div>
-				<div class="collect__item">
-					<span class="collect__marking">03</span>
-					<span class="collect__name">Оформление</span>
-					<div class="view slider">
-						<div class="view__item slider__item">	
-							<div class="view__img-wrapper view__img-wrapper-decor">
+				<div class="collect__item collect__item--last">
+					<div class="collect__head">
+						<span class="collect__marking">03</span>
+						<span class="collect__name">Оформление</span>
+					</div>
+					<div class="view slider view--decor">
+						<div class="view__item slider__item view__item--decor">
+							<div class="view__img-wrapper view__img-wrapper--decor">
 								<picture>
 									<source media="(min-width: 1366px)" srcset="img/decor-2-desktop@1x.jpg 1x, img/decor-2-desktop@2x.jpg 2x">
 									<source media="(min-width: 768px)" srcset="img/decor-2-tablet@1x.jpg 1x, img/decor-2-tablet@2x.jpg 2x">
-									<img src="img/decor-2-mobile@1x.jpg" srcset="img/decor-2-mobile@2x.jpg 2x" alt="Ягодное ассорти" title="Ягодное ассорти" class="view__img view__img-decor">
+									<img src="img/decor-2-mobile@1x.jpg" srcset="img/decor-2-mobile@2x.jpg 2x" alt="Ягодное ассорти" title="Ягодное ассорти" class="view__img view__img--decor">
 								</picture>
 							</div>
-							<span class="slider__number view__number-decor">1/35</span>
-							<p class="view__content view__content-decor content">Маршмэллоу</p>
-							<span class="view__price">600 руб/кг</span>
-							<a href="" class="view__btn btn">Выбрать</a>
+							<p class="view__content view__content--decor content">Маршмэллоу</p>
+							<span class="view__price view__price--decor">600 руб/кг</span>
+							<a href="" class="view__btn btn view__btn--decor">Выбрать</a>
 						</div>
-						<div class="view__item slider__item">	
-							<div class="view__img-wrapper view__img-wrapper-decor">
+						<div class="view__item slider__item view__item--decor">
+							<div class="view__img-wrapper view__img-wrapper--decor">
 								<picture>
 									<source media="(min-width: 1366px)" srcset="img/decor-1-desktop@1x.jpg 1x, img/decor-1-desktop@2x.jpg 2x">
 									<source media="(min-width: 768px)" srcset="img/decor-1-tablet@1x.jpg 1x, img/decor-1-tablet@2x.jpg 2x">
-									<img src="img/decor-1-mobile@1x.jpg" srcset="img/decor-1-mobile@2x.jpg 2x" alt="Маршмэллоу" title="Маршмэллоу" class="view__img view__img-decor">
+									<img src="img/decor-1-mobile@1x.jpg" srcset="img/decor-1-mobile@2x.jpg 2x" alt="Маршмэллоу" title="Маршмэллоу" class="view__img view__img--decor">
 								</picture>
 							</div>
-							<span class="slider__number  view__number-decor">2/35</span>
-							<p class="view__content view__content-decor content">Ягодное ассорти</p>
-							<span class="view__price">700 руб/кг</span>
-							<a href="" class="view__btn btn">Выбрать</a>
+							<p class="view__content view__content--decor content">Ягодное ассорти</p>
+							<span class="view__price view__price--decor">700 руб/кг</span>
+							<a href="" class="view__btn btn view__btn--decor">Выбрать</a>
 						</div>
-						<div class="slider__controls slider__controls--position slider__controls--position-decor">
+						<div class="slider__controls slider__controls--decor">
 							<span class="slider__toggle slider__toggle--active"></span>
 							<span class="slider__toggle"></span>
 							<span class="slider__toggle"></span>
 							<span class="slider__toggle"></span>
 							<span class="slider__toggle"></span>
 						</div>
+					<span class="view__number view__number--decor">1/35</span>
 					</div>
 				</div>
 			</div>
@@ -385,15 +392,15 @@
 				<h2 class="total__title">Ваш выбор</h2>
 				<ul class="total__list">
 					<li class="total__item">
-						<h3 class="total__name">Начинка</h3>
+						<h3 class="total__name total__name--filling">Начинка</h3>
 						<p class="total__conclusion">Шоколадный ганаш</p>
 					</li>
 					<li class="total__item">
-						<h3 class="total__name">Размер</h3>
+						<h3 class="total__name total__name--size">Размер</h3>
 						<p class="total__conclusion">1 кг</p>
 					</li>
 					<li class="total__item">
-						<h3 class="total__name">Оформление</h3>
+						<h3 class="total__name total__name--decor">Оформление</h3>
 						<p class="total__conclusion">Маршмэллоу</p>
 					</li>
 				</ul>
@@ -402,8 +409,8 @@
 		</section>
 		<section class="reviews" id="reviews">
 			<h2 class="reviews__title title">Отзывы</h2>
-			<ul class="reviews__list slider">
-				<li class="reviews__item slider__item">
+			<div class="reviews__list slider">
+				<div class="reviews__item slider__item">
 					<div class="reviews__img-wrapper">
 						<picture>
 							<source media="(min-width: 1366px)" srcset="img/ava-1-desktop@1x.jpg 1x, img/ava-1-desktop@2x.jpg 2x">
@@ -411,23 +418,25 @@
 							<img src="img/ava-1-mobile@1x.jpg" srcset="img/ava-1-mobile@2x.jpg 2x" alt="Аватар" class="reviews__img">
 						</picture>
 					</div>
-					<span class="reviews__name">Мария</span>
-					<span class="reviews__position">юрист, 33 года</span>
-					<p class="reviews__content">Заказывала торт брауни на юбилей мужа.<br>Гости были в восторге! Отдельное спасибо за своевременную доставку! Теперь будем заказывать торты только у вас для наших семейных праздников:)<a href="#" class="reviews__btn">Развернуть</a></p>
-					<div class="slider__controls">
-						<span class="slider__toggle slider__toggle--active"></span>
-						<span class="slider__toggle"></span>
-						<span class="slider__toggle"></span>
-						<span class="slider__toggle"></span>
-						<span class="slider__toggle"></span>
-					</div>
-					<span class="slider__number reviews__number">1/26</span>
-				</li>
-			</ul>		
+					<div class="reviews__text-wrapper">
+						<span class="reviews__name">Мария</span>
+						<span class="reviews__position">юрист, 33 года</span>
+						<p class="reviews__content">Заказывала торт брауни на юбилей мужа. Гости были в восторге! Отдельное спасибо за своевременную доставку! Теперь будем заказывать торты только у вас для наших семейных праздников:)<a href="#" class="reviews__btn">Развернуть</a></p>
+						<div class="slider__controls">
+							<span class="slider__toggle slider__toggle--active"></span>
+							<span class="slider__toggle"></span>
+							<span class="slider__toggle"></span>
+							<span class="slider__toggle"></span>
+							<span class="slider__toggle"></span>
+						</div>
+					</div>	
+				</div>
+				<span class="reviews__number">1/26</span>
+			</div>		
 		</section>
 		<section class="about" id="about">
-			<h2 class="about__title title">О нас</h2>
 			<div class="biography">
+				<h2 class="biography__title title">О нас</h2>
 				<div class="biography__img-wrapper">
 					<picture>
 						<source media="(min-width: 1366px)" srcset="img/confectioner-desktop@1x.jpg 1x, img/confectioner-desktop@2x.jpg 2x">
@@ -435,37 +444,39 @@
 						<img src="img/confectioner-mobile@1x.jpg" srcset="img/confectioner-mobile@2x.jpg 2x" alt="Кондитер-Павел" title="Кондитер-Павел" class="biography__img">
 					</picture>
 				</div>
-				<div class="social__list">
+				<div class="social__list biography__social-networking">
 					<div class="social__item">
 						<a href="#" class="social__link">
-							<svg class="social__icon social__icon-instagram" width="18" height="18">
+							<svg class="social__icon social__icon--instagram" width="18" height="18">
 			  					<use xlink:href='#instagram'/>
 							</svg>
 						</a>
 					</div>
 					<div class="social__item">
 						<a href="#" class="social__link">
-							<svg class="social__icon social__icon-vkontakte" width="22" height="18">
+							<svg class="social__icon social__icon--vkontakte" width="22" height="18">
 			  					<use xlink:href='#vkontakte'/>
 							</svg>
 						</a>
 					</div>
 					<div class="social__item">
 						<a href="#" class="social__link">
-							<svg class="social__icon social__icon-twitter" width="17" height="18">
+							<svg class="social__icon social__icon--twitter" width="17" height="18">
 			  					<use xlink:href='#twitter'/>
 							</svg>
 						</a>
 					</div>
 				</div>
-				<h2 class="biography__subtitle subtitle">О кондитере</h2>
-				<div class="biography__item">
-					<h3 class="biography__title">Кондитер – как призвание</h3>
-					<p class="biography__content content">Павел — профессиональный повар в различных гастрономических областях, но однажды его сердце покорило кондитерское искусство.<br>С ранних лет он увлекался утонченным мастерством и обратился к своим талантам как кондитер. </p>
-				</div>
-				<div class="biography__item">
-					<h3 class="biography__title">Принцип – натуральные ингредиенты</h3>
-					<p class="biography__content content">Сегодня Павел радует изделиями не только близких, но и тех, кто предпочитает качественную продукцию для торжества, а главным принципом является выбор натуральных ингредиентов. </p>
+				<div class="biography__text-wrapper">
+					<h2 class="biography__subtitle subtitle">О кондитере</h2>
+					<div class="biography__item">
+						<h3 class="biography__caption">Кондитер – как призвание</h3>
+						<p class="biography__content content">Павел — профессиональный повар в различных гастрономических областях, но однажды его сердце покорило кондитерское искусство.<br>С ранних лет он увлекался утонченным мастерством и обратился к своим талантам как кондитер. </p>
+					</div>
+					<div class="biography__item">
+						<h3 class="biography__caption">Принцип – натуральные ингредиенты</h3>
+						<p class="biography__content content">Сегодня Павел радует изделиями не только близких, но и тех, кто предпочитает качественную продукцию для торжества, а главным принципом является выбор натуральных ингредиентов. </p>
+					</div>
 				</div>
 			</div>
 			<div class="subscription">
@@ -480,18 +491,22 @@
 				<p class="advantage__subtitle subtitle">Почему нас выбирают?</p>
 				<ul class="advantage__list">
 					<li class="advantage__item">
-						<svg class="advantage__icon advantage__icon-ingredient" width="61" height="61">
+						<svg class="advantage__icon advantage__icon--ingredient" width="61" height="61">
 							<use xlink:href='#ingredient'/>
 						</svg>
-						<h3>Без искусственных добавок</h3>
-						<p class="advantage__content content">Работаем с натуральными ингредиентами и свежими продуктами</p>
+						<div class="advantage__text-wrapper">
+							<h3 class="advantage__caption">Без искусственных добавок</h3>
+							<p class="advantage__content content">Работаем с натуральными ингредиентами и свежими продуктами</p>
+						</div>
 					</li>
 					<li class="advantage__item">
-						<svg class="advantage__icon advantage__icon-cake" width="75" height="48">
+						<svg class="advantage__icon advantage__icon--cake" width="75" height="48">
 							<use xlink:href='#cake'/>
 						</svg>
-						<h3>Свежий торт в день торжества</h3>
-						<p class="advantage__content content">Торты изготавливаются в течение суток до отправки</p>
+						<div class="advantage__text-wrapper">
+							<h3 class="advantage__caption">Свежий торт в день торжества</h3>
+							<p class="advantage__content content">Торты изготавливаются в течение суток до отправки</p>
+						</div>
 					</li>
 				</ul>
 			</div>
@@ -531,21 +546,21 @@
 					<button class="contacts__btn btn" type="submit" value="send">Отправить</button>
 				</form>
 			</div>
-			<div class="contacts__flex-block">
+			<div class="contacts__flex-block contacts__flex-block--position">
 				<p class="contacts__text">Или позвоните по телефону: <a class="contacts__text-link" href="tel:+79068999296">+7 906 899 92 96</a></p>
 				<p class="contacts__text">Наша почта : <a class="contacts__text-link" href="mailto:bakerybypavel@mail.ru">bakerybypavel@mail.ru</a></p>
 				<p class="contacts__text">Мы в соц. сетях:</p>
 				<div class="social__list">
-					<div class="social__item social__item-big">
+					<div class="social__item social__item--big">
 						<a href="#" class="social__link">
-							<svg class="social__icon social__icon-instagram social__icon-instagram-big" width="32" height="32">
+							<svg class="social__icon social__icon--instagram social__icon--instagram-big" width="32" height="32">
 			  					<use xlink:href='#instagram'/>
 							</svg>
 						</a>
 					</div>
-					<div class="social__item social__item-big">
+					<div class="social__item social__item--big">
 						<a href="#" class="social__link">
-							<svg class="social__icon social__icon-vkontakte social__icon-vkontakte-big" width="36" height="32">
+							<svg class="social__icon social__icon--vkontakte social__icon--vkontakte-big" width="36" height="32">
 			  					<use xlink:href='#vkontakte'/>
 							</svg>
 						</a>
@@ -576,25 +591,27 @@
 				<li class="second-nav__item">
 					<a href="index.html#contacts" class="second-nav__link">Контакты</a>
 				</li>
-				<li class="second-nav__item">
+				<li class="second-nav__item second-nav__item--hidden">
 					<a href="tel:+79068999296" class="second-nav__link">+7 906 899 92 96</a>
 				</li>
 			</ul>
 		</nav>
-		<div class="social__list">
-			<a href="#">
-				<svg class="social__icon page-footer__icon page-footer__icon-instagram" width="23" height="23">
-					<use xlink:href='#instagram'/>
-				</svg>
-			</a>
-			<a href="#">
-				<svg class="social__icon page-footer__icon page-footer__icon-vkontakte" width="27" height="23">
-					<use xlink:href='#vkontakte'/>
-				</svg>
-			</a>
-		</div>
-		<div class="contacts__copyright">
-			<span>&copy; 2018 Cakes</span>
+		<div class="page-footer__bottom-block">
+			<div class="social__list">
+				<a href="#">
+					<svg class="social__icon page-footer__icon page-footer__icon-instagram" width="23" height="23">
+						<use xlink:href='#instagram'/>
+					</svg>
+				</a>
+				<a href="#">
+					<svg class="social__icon page-footer__icon page-footer__icon-vkontakte" width="27" height="23">
+						<use xlink:href='#vkontakte'/>
+					</svg>
+				</a>
+			</div>
+			<div class="page-footer__copyright">
+				<span>&copy; 2018 Cakes</span>
+			</div>
 		</div>
 	</footer>
 </body>

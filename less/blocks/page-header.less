@@ -1,3 +1,41 @@
 .page-header {
 	background-color: #fff;
 }
+.page-header__info {
+	display: none;
+}
+@media (min-width: @tabletMinWidth) {
+.page-header__info-tel {
+	font-family: @fontFamilyBrandBold;
+	font-size: 15px;
+	color: @colorBrand;
+	text-decoration: none;
+}
+}
+@media (min-width: @tabletMinWidth) and (max-width: @tabletMaxWidth) {
+.page-header {
+	display: flex;
+	padding: 10px 0;
+}
+.page-header__info {
+	display: inline-block;
+	margin-right: 45px;
+}
+.page-header__info-tel {
+	line-height: 40px;
+}
+}
+@media (min-width: @desktopWidth) {
+.page-header {
+	display: flex;
+	background: none;
+	padding: 65px @lateralEdgeDesktop;
+}
+.page-header__info {
+	display: inline-block;
+	margin-right: 0;
+}
+.page-header__info-tel {
+	line-height: 22px;
+}
+}

@@ -11,3 +11,34 @@
 	margin-top: 0;
 	margin-right: 10px;
 }
+@media (min-width: @tabletMinWidth) and (max-width: @tabletMaxWidth) {
+.care {
+	margin-left: 28px;
+}
+.care__title {
+	margin-bottom: 2px;
+}
+.care__subtitle {
+	margin-bottom: 5px;
+}
+.care__content {
+	max-width: 480px;
+	margin-right: 390px;
+}
+}
+@media (min-width: @desktopWidth) {
+.care {
+	padding: 0 @lateralEdgeDesktop;
+}
+.care__title {
+	margin-bottom: 10px;
+}
+.care__subtitle {
+	margin-bottom: 10px;
+}
+.care__content {
+	max-width: 680px;
+	font-size: 20px;
+	margin-right: 780px;
+}
+}

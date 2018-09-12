@@ -25,7 +25,7 @@
 	margin-bottom: 9px;
 	box-sizing: border-box;
 }
-.collect__item:nth-last-child(1) {
+.collect__item--last {
 	margin-bottom: 0;
 }
 .collect__marking {
@@ -38,4 +38,113 @@
 	font-family: @fontFamilyTitle;
 	font-size: 16px;
 	color: @colorSecond;
+}
+@media (min-width: @tabletMinWidth) {
+.collect {
+	margin-bottom: 15px;
+}
+.collect__subtitle {
+	margin-top: 5px;
+	margin-bottom: 32px;
+}
+.collect__list {
+	flex-direction: column;
+}
+.collect__item {
+	width: inherit;
+	display: flex;
+	position: relative;
+	box-shadow: 0 2px 5px 1px #f8d5d7;
+}
+.collect__item--last {
+	box-shadow: 1px 0 0 0 #f8d5d7, -1px 0 0 0 #f8d5d7;
+
+	&::before {
+	background-repeat: no-repeat;
+	position: absolute;
+	content: "";
+	}
+}
+.collect__head {
+	position: absolute;
+}
+.collect__name {
+	width: 130px;
+	display: block;
+	margin-top: 7px;
+}
+}
+@media (min-width: @tabletMinWidth) and (max-width: @tabletMaxWidth) and (min-resolution:144dpi),
+(min-width: @tabletMinWidth) and (max-width: @tabletMaxWidth) and (min-resolution:1.5dppx) {
+.collect__item-background::before {
+	background-image: url("../img/illustration-desktop@1x.png");
+}
+}
+@media (min-width: @tabletMinWidth) and (max-width: @tabletMaxWidth) {
+.collect__list {
+	width: 728px;
+}
+.collect__item {
+	padding: 40px 45px 58px;
+	margin-bottom: 22px;
+}
+.collect__item--last {
+	padding-bottom: 10px;
+	margin-bottom: 0;
+
+	&::before {
+	background-image: url("../img/illustration-tablet@1x.png");
+	width: 104px;
+	height: 140px;
+	top: 120px;
+	left: 18px;
+	}
+}
+.collect__marking {
+	font-size: 36px;
+}
+.collect__name {
+	font-size: 18px;
+}
+}
+@media (min-width: @desktopWidth) {
+.collect {
+	padding: 0 @lateralEdgeDesktop;
+}
+.collect__subtitle {
+	margin-top: 0;
+	margin-bottom: 50px;
+}
+.collect__list {
+	width: 1218px;
+}
+.collect__item {
+	padding: 72px 80px 95px;
+	margin-bottom: 37px;
+}
+.collect__item--last {
+	padding-bottom: 44px;
+	margin-bottom: 0;
+
+	&::before {
+	background-image: url("../img/illustration-desktop@1x.png");
+	width: 208px;
+	height: 279px;
+	top: 210px;
+	left: 45px;
+	}
+}
+.collect__marking {
+	font-size: 58px;
+}
+.collect__name {
+	font-size: 27px;
+	line-height: 30px;	
+}
+}
+@media (min-width: @desktopWidth) and (min-resolution:144dpi),
+(min-width: @desktopWidth) and (min-resolution:1.5dppx) {
+.collect__item-background::before {
+	background-image: url("../img/illustration-desctop@2x.png");
+}
 }

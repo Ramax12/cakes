@@ -15,13 +15,80 @@
 		content: "";
 	}
 }
-.about__title {
-	text-align: center;
-	margin-bottom: 22px;
-}
 @media (max-width: @mobileMaxWidth) and (min-resolution:144dpi),
 (max-width: @mobileMaxWidth) and (min-resolution:1.5dppx) {
 .about::after {
 		background-image: url("../img/cakes-2-mobile@2x.png");
+}
+}
+@media (min-width: @tabletMinWidth) {
+.about {
+	&::before {
+		background-repeat: no-repeat;
+		position: absolute;
+		left: -10px;
+		z-index: -1;
+		content: "";
+	}	
+}
+}
+@media (min-width: @tabletMinWidth) and (max-width: @tabletMaxWidth) {
+.about {
+	margin-bottom: 128px;
+
+	&::before {
+		background-image: url("../img/berries-tablet@1x.png");
+		background-size: 319px;
+		width: 319px;
+		height: 412px;
+		bottom: 160px;
+	}
+
+	&::after {
+		background-position: 105% 0;
+		right: 0px;
+		bottom: -140px;
+	}
+}
+}
+@media (min-width: @tabletMinWidth) and (max-width: @tabletMaxWidth) and (min-resolution:144dpi),
+(min-width: @tabletMinWidth) and (max-width: @tabletMaxWidth) and (min-resolution:1.5dppx) {
+.about::before {
+	background-image: url("../img/berries-tablet@2x.png");
+}
+.about::after {
+	background-image: url("../img/cakes-2-mobile@2x.png");
+}
+}
+@media (min-width: @desktopWidth) {
+.about {
+	margin-bottom: 252px;
+
+	&::before {
+		background-image: url("../img/berries-desktop@1x.png");
+		background-size: 568px;
+		width: 568px;
+		height: 690px;
+		bottom: 350px;
+	}
+
+	&::after {
+		background-image: url("../img/cakes-2-desktop@1x.png");
+		background-position: 50px 0;
+		background-size: 818px;
+		width: 818px;
+		height: 808px;
+		right: 0px;
+		bottom: -300px;
+	}
+}
+}
+@media (min-width: @desktopWidth) and (min-resolution:144dpi),
+(min-width: @desktopWidth) and (min-resolution:1.5dppx) {
+.about::before {
+	background-image: url("../img/berries-desktop@2x.png");
+}
+.about::after {
+	background-image: url("../img/cakes-2-desktop@2x.png");
 }
 }

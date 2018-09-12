@@ -5,10 +5,6 @@
 	padding: 0 @lateralEdgeMobile;
 	margin-bottom: 42px;
 }
-.reviews__list {
-	padding: 0;
-	margin: 0;
-}
 .reviews__item {
 	width: 280px;
 	display: flex;
@@ -21,10 +17,15 @@
 	background-color: #fff;
 	width: 58px;
 	height: 58px;
-	border-radius: 30px;
+	border-radius: 100px;
 }
 .reviews__img {
-	border-radius: 30px;
+	border-radius: 100px;
+}
+.reviews__text-wrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 .reviews__name {
 	font-family: @fontFamilyBrandBold;
@@ -39,6 +40,7 @@
 	margin-bottom: 5px;
 }
 .reviews__content {
+	width: 250px;
 	font-family: @fontFamilyBrand;
 	font-size: 12px;
 	line-height: 15px;
@@ -50,10 +52,156 @@
 .reviews__btn {
 	display: inline-block;
 	vertical-align: middle;
+	font-style: italic;
 	margin-left: 3px;
 }
 .reviews__number {
+	position: absolute;
+	font-family: @fontFamilyBrand;
+	font-size: 12px;
+	line-height: 25px;
 	right: 0;
-	top: 154px;
+	bottom: 15px;
 	color: @colorSecond;
+}
+@media (min-width: @tabletMinWidth) {
+.reviews__item {
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+.reviews__text-wrapper {
+	align-items: flex-start;
+}
+}
+@media (min-width: @tabletMinWidth) and (max-width: @tabletMaxWidth) {
+.reviews {
+	position: relative;
+	margin-bottom: 132px;
+
+	&::before, &::after {
+		background-image: url("../img/channel-mixer-tablet@1x.png");
+		background-size: 320px;
+		width: 320px;
+		height: 94px;
+		position: absolute;
+		top: -35px;
+		content: "";
+	}
+	&::before {
+		left: 0;
+		transform: rotate(-15deg)
+	}
+	&::after {
+		right: 4px;
+		transform: rotate(-5deg)
+	}
+}
+.reviews__title {
+	margin-bottom: 18px;
+}
+.reviews__item {
+	width: 414px;
+}
+.reviews__img-wrapper {
+	width: 107px;
+	height: 107px;
+	margin-top: 30px;
+}
+.reviews__name {
+	display: block;
+	font-size: 16px;
+}
+.reviews__position {
+	display: inline-block;
+	font-size: 14px;
+	margin-bottom: 12px;
+}
+.reviews__content {
+	width: 255px;
+	font-size: 14px;
+	line-height: 17px;
+	text-align: left;
+}
+.reviews__btn {
+	display: block;
+}
+.reviews__number {
+	bottom: -20px;
+}
+}
+@media (min-width: @tabletMinWidth) and (max-width: @tabletMaxWidth) and (min-resolution:144dpi),
+(min-width: @tabletMinWidth) and (max-width: @tabletMaxWidth) and (min-resolution:1.5dppx) {
+.reviews::before, .reviews::after {
+		background-image: url("../img/channel-mixer-tablet@2x.png");
+}
+}
+@media (min-width: @desktopWidth) {
+.reviews {
+	position: relative;
+	margin-bottom: 198px;
+
+	&::before, &::after {
+		background-image: url("../img/channel-mixer-desktop@1x.png");
+		background-repeat: no-repeat;
+		background-size: 630px;
+		width: 630px;
+		height: 184px;
+		position: absolute;
+		content: "";
+	}
+	&::before {
+		top: -100px;
+		left: 0;
+		transform: rotate(-20deg)
+	}
+	&::after {
+		background-position: 82px 0;
+		top: -82px;
+		right: 6px;
+		transform: rotate(-4deg)
+	}
+}
+.reviews__title {
+	margin-bottom: 49px;
+}
+.reviews__item {
+	width: 660px;
+}
+.reviews__img-wrapper {
+	width: 209px;
+	height: 209px;
+}
+.reviews__name {
+	display: block;
+	font-size: 27px;
+	margin-bottom: 15px;
+}
+.reviews__position {
+	display: inline-block;
+	font-size: 20px;
+	margin-bottom: 26px;
+}
+.reviews__content {
+	width: 360px;
+	font-size: 18px;
+	line-height: 24px;
+	text-align: left;
+}
+.reviews__btn {
+	font-size: 16px;
+	line-height: 24px;
+	margin-left: 8px;
+}
+.reviews__number {
+	font-size: 18px;
+	right: -50px;
+	bottom: -20px;
+}	
+}
+@media (min-width: @desktopWidth) and (min-resolution:144dpi),
+(min-width: @desktopWidth) and (min-resolution:1.5dppx) {
+.reviews::before, .reviews::after {
+		background-image: url("../img/channel-mixer-desktop@2x.png");
+}
 }

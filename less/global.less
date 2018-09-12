@@ -1,6 +1,7 @@
 body {
 	background-color: #fbebea;
-	max-width: 1366px;
+	max-width: 1920px;
+	position: relative;
 	font-family: @fontFamilyBrand;
 	font-size: 14px;
 	line-height: 16px;
@@ -13,7 +14,7 @@ body {
 	background-position: 50% 0;
 	background-size: 401px;
 	width: 100%;
-	height: 100%;
+	height: 401px;
 	position: absolute;
 	top: -165px;
 	z-index: -1;
@@ -70,5 +71,39 @@ a:hover {
 (max-width: @mobileMaxWidth) and (min-resolution:1.5dppx) {
 body::before {
 	background-image: url("../img/cakes-1-mobile@2x.png");
+}
+}
+@media (min-width: @tabletMinWidth) and (max-width: @tabletMaxWidth) {
+body::before {
+	background-image: url("../img/cakes-1-tablet@1x.png");
+	background-position: 0;
+	width: 570px;
+	height: 528px;
+	background-size: 698px;
+	top: 80px;
+	right: 0;
+}
+}
+@media (min-width: @tabletMinWidth) and (max-width: @tabletMaxWidth) and (min-resolution:144dpi),
+(min-width: @tabletMinWidth) and (max-width: @tabletMaxWidth) and (min-resolution:1.5dppx) {
+body::before {
+	background-image: url("../img/cakes-1-tablet@2x.png");
+}
+}
+@media (min-width: @desktopWidth) {
+body::before {
+	background-image: url("../img/cakes-1-desktop@1x.png");
+	background-position: 170px 0;
+	width: 1185px;
+	height: 951px;
+	background-size: 1185px;
+	top: 100px;
+	right: 0;
+}
+}
+@media (min-width: @desktopWidth) and (min-resolution:144dpi),
+(min-width: @desktopWidth) and (min-resolution:1.5dppx) {
+body::before {
+	background-image: url("../img/cakes-1-desktop@2x.png");
 }
 }
