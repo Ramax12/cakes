@@ -33,7 +33,7 @@
       this.slides = this.el.querySelectorAll('.slider__item');
       this.sliderToggle = this.el.querySelectorAll('.slider__toggle');
       this.sliderNumber = this.el.querySelectorAll('.slider__number');
-      this.imgTitle = this.el.querySelectorAll('.view__img');
+      this.sliderScrolling = this.el.querySelectorAll('.slider__scrolling');
       this.prevBtn = this.el.querySelectorAll('.slider__previous-btn');
       this.nextBtn = this.el.querySelectorAll('.slider__next-btn');
       this.slides.currentSlide = 0;
@@ -53,7 +53,7 @@
         containerNumber.innerHTML = (self.slides.currentSlide + 1) + '/' + self.slides.length;
       });
 
-      [].forEach.call(self.imgTitle, function (containerItem) {
+      [].forEach.call(self.sliderScrolling, function (containerItem) {
         var touchstartX = 0,
             touchstartY = 0,
             touchendX = 0,
