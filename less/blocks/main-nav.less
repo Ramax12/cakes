@@ -23,6 +23,7 @@
     margin: 0 9px;
     border: none;
     cursor: pointer;
+    transition: all 0.5s ease;
 }
 .main-nav__toggle::before {
     background-color: #000;
@@ -57,6 +58,11 @@
     text-align: center;
     padding: 12px 0;
     border-bottom: 1px solid @colorBorders;
+}
+.main-nav__link:hover,
+.main-nav__link:focus {
+    color: rgba(45, 40, 41, .7);
+    opacity: 1;
 }
 .main-nav__item:nth-last-child(1) .main-nav__link {
     border-bottom: none;

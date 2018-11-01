@@ -39,8 +39,12 @@
 	color: @colorBrand;
 	margin-bottom: 5px;
 }
+.reviews__content-wrapper {
+	overflow: hidden;
+}
 .reviews__content {
 	width: 250px;
+	height: 75px;
 	font-family: @fontFamilyBrand;
 	font-size: 12px;
 	line-height: 15px;
@@ -48,6 +52,9 @@
 	text-align: center;
 	margin-top: 0;
 	margin-bottom: 0;
+}
+.reviews__content--show {
+	height: auto;
 }
 .reviews__btn {
 	display: inline-block;
@@ -119,9 +126,13 @@
 }
 .reviews__content {
 	width: 255px;
+	height: 85px;
 	font-size: 14px;
 	line-height: 17px;
 	text-align: left;
+}
+.reviews__content--show {
+	height: auto;
 }
 .reviews__btn {
 	display: block;
@@ -184,9 +195,13 @@
 }
 .reviews__content {
 	width: 360px;
+	height: 120px;
 	font-size: 18px;
 	line-height: 24px;
 	text-align: left;
+}
+.reviews__content--show {
+	height: auto;
 }
 .reviews__btn {
 	font-size: 16px;
